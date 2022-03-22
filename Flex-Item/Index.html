@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Flex Item</title>
+
+</head>
+
+<body>
+    <h3>Demo flex grow</h3>
+    <h4>Flex grow 0</h4>
+    <div class="flex_container">
+        <div class="item flex_grow_0">0</div>
+        <div class="item flex_grow_0">1</div>
+        <div class="item flex_grow_0">2</div>
+        <div class="item flex_grow_0">3</div>
+    </div>
+
+    <h4>Flex grow 1</h4>
+    <div class="flex_container">
+        <div class="item flex_grow_1">0</div>
+        <div class="item flex_grow_1">1</div>
+        <div class="item flex_grow_1">2</div>
+        <div class="item flex_grow_1">3</div>
+    </div>
+
+    <h4>Flex grow 2</h4>
+    <div class="flex_container">
+        <div class="item flex_grow_1">0</div>
+        <div class="item flex_grow_2">1</div>
+        <div class="item flex_grow_1">2</div>
+        <div class="item flex_grow_2">33333</div>
+    </div>
+
+
+    <h4>Flex grow 3</h4>
+    <div class="flex_container">
+        <div class="item flex_grow_1">0</div>
+        <div class="item flex_grow_2">1</div>
+        <div class="item flex_grow_3">2</div>
+        <div class="item flex_grow_0">3</div>
+    </div>
+
+    <h3>Demo flex basis</h3>
+    <h4>flex basis auto flex grow 1</h4>
+    <div class="flex_container">
+        <div class="item c1 flex_basis_auto flex_grow_1">0</div>
+        <div class="item c1 flex_basis_auto flex_grow_1">111</div>
+        <div class="item c1 flex_basis_auto flex_grow_1">2</div>
+        <div class="item c1 flex_basis_auto flex_grow_1">333</div>
+    </div>
+
+    <h4>flex basis auto flex grow 2</h4>
+    <div class="flex_container">
+        <div class="item c1 flex_basis_auto flex_grow_1">0</div>
+        <div class="item c1 flex_basis_auto flex_grow_1">111</div>
+        <div class="item c1 flex_basis_auto flex_grow_1">2</div>
+        <div class="item c1 flex_basis_auto flex_grow_2">333</div>
+    </div>
+
+    <h4>flex basis 0 flex grow 1</h4>
+    <div class="flex_container">
+        <div class="item c1 flex_basis_0 flex_grow_1">000000</div>
+        <div class="item c1 flex_basis_0 flex_grow_1">111</div>
+        <div class="item c1 flex_basis_0 flex_grow_1">2</div>
+        <div class="item c1 flex_basis_0 flex_grow_1">333</div>
+    </div>
+
+    <h4>flex basis px flex grow 1</h4>
+    <div class="flex_container enlarge_container">
+        <div class="item c1 flex_basis_px flex_grow_1">00</div>
+        <div class="item c1 flex_basis_px flex_grow_1">111</div>
+        <div class="item c1 flex_basis_px flex_grow_1">222</div>
+        <div class="item c1 flex_basis_px flex_grow_1">333</div>
+    </div>
+
+    <h3>Demo flex shrink</h3>
+    <h4>flex shrink 1 flex grow 1</h4>
+    <div class="flex_container">
+        <div class="item c2 shrink_1 flex_grow_1">0</div>
+        <div class="item c2 shrink_1 flex_grow_1">1</div> 
+        <div class="item c2 shrink_1 flex_grow_1">2</div>
+        <div class="item c2 shrink_1 flex_grow_1">3</div>
+        <div class="item c2 shrink_1 flex_grow_1">4</div>
+    </div>
+
+    <h4>flex shrink 1 flex grow 1 com um conteúdo maior</h4>
+    <div class="flex_container">
+        <div class="item c2 shrink_1 flex_grow_1">0</div>
+        <div class="item c2 shrink_1 flex_grow_1">3.14159 26535</div> 
+        <div class="item c2 shrink_1 flex_grow_1">2</div>
+        <div class="item c2 shrink_1 flex_grow_1">3</div>
+    </div>
+
+    <h4>flex shrink 0 flex basis px</h4>
+    <div class="flex_container">
+        <div class="item c2 shrink_0 flex_basis_px">0</div>
+        <div class="item c2 shrink_0 flex_basis_px">3</div> 
+        <div class="item c2 shrink_0 flex_basis_px">2</div>
+        <div class="item c2 shrink_0 flex_basis_px">3</div>
+    </div>
+
+    <h4>flex shrink mix flex grow 1</h4>
+    <div class="flex_container">
+        <div class="item c2 shrink_1 flex_grow_1">0</div>
+        <div class="item c2 shrink_2 flex_grow_1 flex_basis_px">3.14159265</div> 
+        <div class="item c2 shrink_2 flex_grow_1 flex_basis_px">2</div>
+        <div class="item c2 shrink_3 flex_grow_1 flex_basis_px">3</div>
+    </div>
+
+    <h3>Demo flex</h3>
+
+    <h4>flex 1</h4>
+    <div class="flex_container">
+        <div class="item c3 flex_1">0</div>
+        <div class="item c3 flex_1">1</div> 
+        <div class="item c3 flex_1">2</div>
+        <div class="item c3 flex_1">3</div>
+        <div class="item c3 flex_1">4</div>
+    </div>
+
+
+    <h4>flex mix</h4>
+    <div class="flex_container">
+        <div class="item c3 flex_1">0</div>
+        <div class="item c3 flex_2">1</div> 
+        <div class="item c3 flex_2">2</div>
+        <div class="item c3 flex_1">3</div>
+        <div class="item c3 flex_1">4</div>
+    </div>
+
+    <h4>flex 1 ignorando -> basis = 0</h4>
+    <div class="flex_container">
+        <div class="item c3 flex_1 largura">0</div>
+        <div class="item c3 flex_1 largura">1</div> 
+        <div class="item c3 flex_1 largura">2</div>
+        <div class="item c3 flex_1 largura">3</div>
+        <div class="item c3 flex_1 largura">4</div>
+    </div>
+
+    <h3>Demo order</h3>
+    <h4>order 0</h4>
+    <div class="flex_container">
+        <div class="item c4 order_0">0</div>
+        <div class="item c4 order_0">1</div> 
+        <div class="item c4 order_0">2</div>
+        <div class="item c4 order_0">3</div>
+        <div class="item c4 order_0">4</div>
+    </div>
+
+    <h4>order mix</h4>
+    <div class="flex_container">
+        <div class="item c4 order_0">0</div>
+        <div class="item c4 order_3">1</div> 
+        <div class="item c4 order_2">2</div>
+        <div class="item c4 order_1">3</div>
+        <div class="item c4 order_0">4</div>
+    </div>
+
+    <h3>Demo align self</h3>
+    <h4>auto align-items container: center </h4>
+    <div class="flex_container align_container">
+        <div class="item c5 auto">0000</div>
+        <div class="item c5 auto">111</div> 
+        <div class="item c5 auto">3.14 159 265 358 979 323 846</div>
+        <div class="item c5 auto">22222</div>
+    </div>
+
+    <h4> stretch, start, end, baseline e center </h4>
+    <div class="flex_container">
+        <div class="item c5 baseline">0000</div>
+        <div class="item c5 start">111</div> 
+        <div class="item c5 stretch">3.14 159 265 358 979 323 846</div>
+        <div class="item c5 end">22222</div>
+        <div class="item c5 center">5</div>
+    </div>
+
+
+
+
+</body>
+
+
+
+</html>
